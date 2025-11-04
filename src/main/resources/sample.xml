@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Gem xmlns="http://gems.lab2">
+    <Stone id="G1">
+        <name>Emerald</name>
+        <preciousness>precious</preciousness>
+        <origin>Colombia</origin>
+        <visualParameters>
+            <color>green</color>
+            <transparency>85</transparency>
+            <cutting>10</cutting>
+        </visualParameters>
+        <value>45.50</value>
+    </Stone>
+
+    <Stone id="G2">
+        <name>Ruby</name>
+        <preciousness>precious</preciousness>
+        <origin>Myanmar</origin>
+        <visualParameters>
+            <color>red</color>
+            <transparency>90</transparency>
+            <cutting>12</cutting>
+        </visualParameters>
+        <value>60.75</value>
+    </Stone>
+
+    <Stone id="G3">
+        <name>Amethyst</name>
+        <preciousness>semiprecious</preciousness>
+        <origin>Brazil</origin>
+        <visualParameters>
+            <color>pink</color>
+            <transparency>70</transparency>
+            <cutting>9</cutting>
+        </visualParameters>
+        <value>15.25</value>
+    </Stone>
+</Gem>

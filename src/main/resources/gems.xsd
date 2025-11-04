@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://gems.lab2"
+           xmlns="http://gems.lab2"
+           elementFormDefault="qualified">
+
+    <!-- ==== SIMPLE TYPES ==== -->
+
+    <!-- Preciousness type -->
+    <xs:simpleType name="preciousnessType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="precious"/>
+            <xs:enumeration value="semiprecious"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Color enumeration -->
+    <xs:simpleType name="colorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="red"/>
+            <xs:enumeration value="green"/>
+            <xs:enumeration value="blue"/>
+            <xs:enumeration value="yellow"/>
+            <xs:enumeration value="white"/>
+            <xs:enumeration value="pink"/>
+            <xs:enumeration value="black"/>
+            <xs:enumeration value="colorless"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Transparency: 0–100% -->
+    <xs:simpleType name="transparencyType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Cutting facets: 4–15 -->
+    <xs:simpleType name="cuttingType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="4"/>
+            <xs:maxInclusive value="15"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Origin pattern -->
+    <xs:simpleType name="originType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-zА-Яа-яІіЇїЄє'’\-\s]+"/>
+            <xs:minLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Value: weight in carats -->
+    <xs:simpleType name="valueType">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:maxInclusive value="500"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- ==== COMPLEX TYPES ==== -->
+
+    <!-- Visual parameters -->
+    <xs:complexType name="visualParametersType">
+        <xs:sequence>
+            <xs:element name="color" type="colorType"/>
+            <xs:element name="transparency" type="transparencyType"/>
+            <xs:element name="cutting" type="cuttingType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Gem -->
+    <xs:complexType name="GemType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="preciousness" type="preciousnessType"/>
+            <xs:element name="origin" type="originType"/>
+            <xs:element name="visualParameters" type="visualParametersType"/>
+            <xs:element name="value" type="valueType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+
+    <!-- Root element -->
+    <xs:element name="Gem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Stone" type="GemType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

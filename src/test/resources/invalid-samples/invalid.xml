@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems xmlns="http://gems.lab2">
+    <gem id="G1">
+        <name>FakeStone</name>
+        <preciousness>precious</preciousness>
+        <origin>Atlantis</origin>
+        <visualParameters>
+            <color>blue</color>
+            <transparency>200</transparency> <!-- value greater than 100 -->
+            <cutting>10</cutting>
+        </visualParameters>
+        <value>12.5</value>
+    </gem>
+</gems>
