@@ -1,4 +1,3 @@
-# Вбудовані файли Android Studio
 *.iml
 .gradle
 /local.properties
@@ -10,17 +9,13 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 
-# Важливо: ігноруємо папки build В УСІХ місцях (і в корені, і в app/)
 build/
 !gradle-wrapper.jar
 
-# Тимчасові файли C++ (якщо раптом будуть)
 .externalNativeBuild
 .cxx
 
-# Файли готового додатку (їх не треба тримати в коді)
 *.apk
 *.aab
 
-# Системні файли
 Thumbs.db
