@@ -3,13 +3,14 @@
 Класична стратегічна гра "Морський бій" для Android, реалізована на Java. 
 
 ###  Скріншоти
-<!-- 
+
 <div style="display: flex; justify-content: space-between;">
   <img src="screenshots/screen1.png" width="30%" />
   <img src="screenshots/screen2.png" width="30%" />
-  <img src="screenshots/screen3.png" width="30%" />
+<img src="screenshots/screen3.png" width="30%" />
+
 </div>
--->
+
 
 ###  Геймплей
 *   **Флот:** 1 Лінкор (4 кл.), 2 Крейсери (3 кл.), 3 Есмінці (2 кл.), 4 Катери (1 кл.).
