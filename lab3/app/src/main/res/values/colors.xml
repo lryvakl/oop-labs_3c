@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основні кольори -->
+    <color name="purple_500">#6200EE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Наші нові кольори -->
+    <color name="ocean_deep">#0f2027</color>   <!-- Темний низ -->
+    <color name="ocean_mid">#203a43</color>    <!-- Середина -->
+    <color name="ocean_top">#2c5364</color>    <!-- Світлий верх -->
+
+    <color name="glass_fill">#26FFFFFF</color> <!-- 15% білого -->
+    <color name="glass_stroke">#80FFFFFF</color> <!-- 50% білого для рамки -->
+
+    <color name="neon_hit">#FF1744</color>     <!-- Яскраво червоний -->
+    <color name="neon_miss">#00E5FF</color>    <!-- Неоновий блакитний -->
+    <color name="ship_gray">#B0BEC5</color>
+</resources>
